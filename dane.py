@@ -7,5 +7,5 @@ users_list: list = [
     {"name":"Wojtek","nick":"oleksy","posts":54},
     {"name":"Bartosz","nick":"baran","posts":4},
     {"name":"Mateusz","nick":"świetlik","posts":234},
-    {"name":"Agata","nick":"AAA","posts":737}
+    {"name":"Szymon","nick":"Ojciec Szymona","posts":737}
     ]
