@@ -5,11 +5,11 @@ def menu():
         #Dodaj
         print('Naciśnij [1] aby dodać użytkownika' )
         #Wyswietl
-        print('Naciśnij [2] aby dodać użytkownika' )
+        print('Naciśnij [2] aby wyświetlić użytkownika' )
         #Zmien
-        print('Naciśnij [3] aby dodać użytkownika' )
+        print('Naciśnij [3] aby zmienić dane użytkownika' )
         #Usun
-        print('Naciśnij [4] aby dodać użytkownika' )
+        print('Naciśnij [4] aby usunąć użytkownika' )
         #Zakończ
         print('Naciśnij [0] aby zakończyć program' )
 
