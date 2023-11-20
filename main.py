@@ -1,4 +1,3 @@
-from dane import users_list
+from utils import my_functions
 
-for user in users_list:
-    print (f'twoj znajomy {user["nick"]} opublikował {user["posts"]} postów')
+my_functions.menu()
