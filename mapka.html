@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f71d9708455503b026f67fb6cfbe966c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f71d9708455503b026f67fb6cfbe966c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f71d9708455503b026f67fb6cfbe966c = L.map(
+                "map_f71d9708455503b026f67fb6cfbe966c",
+                {
+                    center: [52.5, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "OpesStreetMap",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dcf5c446b03f30e75f1898a9f849ab60 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_dcf5c446b03f30e75f1898a9f849ab60.addTo(map_f71d9708455503b026f67fb6cfbe966c);
+    
+            var marker_fcc03a05f701f144afe9d6952baec03b = L.marker(
+                [53.125, 18.011111],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_6fc33621e89a855e7e0241161a533f17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae672208a0aba1a2b0f1a39d9dc96e25 = $(`<div id="html_ae672208a0aba1a2b0f1a39d9dc96e25" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Oliver</div>`)[0];
+                popup_6fc33621e89a855e7e0241161a533f17.setContent(html_ae672208a0aba1a2b0f1a39d9dc96e25);
+            
+        
+
+        marker_fcc03a05f701f144afe9d6952baec03b.bindPopup(popup_6fc33621e89a855e7e0241161a533f17)
+        ;
+
+        
+    
+    
+            var marker_feb79ad96a6ec53ce47dc0abb91e03df = L.marker(
+                [54.213889, 21.741389],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_798283b62f7433832706e8c2b0979291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd1df476e511262858b7cd2654d3656f = $(`<div id="html_cd1df476e511262858b7cd2654d3656f" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Szymon</div>`)[0];
+                popup_798283b62f7433832706e8c2b0979291.setContent(html_cd1df476e511262858b7cd2654d3656f);
+            
+        
+
+        marker_feb79ad96a6ec53ce47dc0abb91e03df.bindPopup(popup_798283b62f7433832706e8c2b0979291)
+        ;
+
+        
+    
+    
+            var marker_c1103368e5f6c73773946393eec6d7c3 = L.marker(
+                [53.135278, 23.145556],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_3c8608dcaa8969c3ccb3e1809d68fd90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e064fc1a87f131ff5ccb9495bb02f553 = $(`<div id="html_e064fc1a87f131ff5ccb9495bb02f553" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Piotr</div>`)[0];
+                popup_3c8608dcaa8969c3ccb3e1809d68fd90.setContent(html_e064fc1a87f131ff5ccb9495bb02f553);
+            
+        
+
+        marker_c1103368e5f6c73773946393eec6d7c3.bindPopup(popup_3c8608dcaa8969c3ccb3e1809d68fd90)
+        ;
+
+        
+    
+    
+            var marker_8d11aedea9a1a67e1dba53bccbee2975 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_f078236a2b09a44ce74b6746c594df42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6296dcba463a916554b1875596444f21 = $(`<div id="html_6296dcba463a916554b1875596444f21" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Stanisław</div>`)[0];
+                popup_f078236a2b09a44ce74b6746c594df42.setContent(html_6296dcba463a916554b1875596444f21);
+            
+        
+
+        marker_8d11aedea9a1a67e1dba53bccbee2975.bindPopup(popup_f078236a2b09a44ce74b6746c594df42)
+        ;
+
+        
+    
+    
+            var marker_15b19427baf01c90d073b664b6eeab44 = L.marker(
+                [53.176389, 22.073056],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_81c0c67793176ea219e5df091e1b2716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a037f36292636ee29b67196877bda119 = $(`<div id="html_a037f36292636ee29b67196877bda119" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Maciej</div>`)[0];
+                popup_81c0c67793176ea219e5df091e1b2716.setContent(html_a037f36292636ee29b67196877bda119);
+            
+        
+
+        marker_15b19427baf01c90d073b664b6eeab44.bindPopup(popup_81c0c67793176ea219e5df091e1b2716)
+        ;
+
+        
+    
+    
+            var marker_0de5704179657a45b1a67748cceff416 = L.marker(
+                [51.566667, 21.861389],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_be2fa405a0a293ca797ae1337426bfab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_befd48dde90b04624f5c9af07eb7d62f = $(`<div id="html_befd48dde90b04624f5c9af07eb7d62f" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Wojtek</div>`)[0];
+                popup_be2fa405a0a293ca797ae1337426bfab.setContent(html_befd48dde90b04624f5c9af07eb7d62f);
+            
+        
+
+        marker_0de5704179657a45b1a67748cceff416.bindPopup(popup_be2fa405a0a293ca797ae1337426bfab)
+        ;
+
+        
+    
+    
+            var marker_70632c230469f7f59e6a1c5ea89fe5cf = L.marker(
+                [53.125, 18.011111],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_f6e5f02e4cbe7e88d4122a3922aa92b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c155e686766ab943dabe512cdec4aac1 = $(`<div id="html_c155e686766ab943dabe512cdec4aac1" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Bartosz</div>`)[0];
+                popup_f6e5f02e4cbe7e88d4122a3922aa92b0.setContent(html_c155e686766ab943dabe512cdec4aac1);
+            
+        
+
+        marker_70632c230469f7f59e6a1c5ea89fe5cf.bindPopup(popup_f6e5f02e4cbe7e88d4122a3922aa92b0)
+        ;
+
+        
+    
+    
+            var marker_010fb96060db80169c73924954308631 = L.marker(
+                [51.25, 22.566667],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_380a753560db6e33ecc9f9a7b267abdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_370797918d10b7eddbe643ceacfaa449 = $(`<div id="html_370797918d10b7eddbe643ceacfaa449" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Mateusz</div>`)[0];
+                popup_380a753560db6e33ecc9f9a7b267abdd.setContent(html_370797918d10b7eddbe643ceacfaa449);
+            
+        
+
+        marker_010fb96060db80169c73924954308631.bindPopup(popup_380a753560db6e33ecc9f9a7b267abdd)
+        ;
+
+        
+    
+    
+            var marker_36b65fc8832024fbfe9708ea5f7a679d = L.marker(
+                [54.213889, 21.741389],
+                {}
+            ).addTo(map_f71d9708455503b026f67fb6cfbe966c);
+        
+    
+        var popup_ad2feed4874a5b4e799e511c2649fa53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c7eae7c4842fc73cac73603acff8d4f = $(`<div id="html_5c7eae7c4842fc73cac73603acff8d4f" style="width: 100.0%; height: 100.0%;">Miasto użytkownika Szymon</div>`)[0];
+                popup_ad2feed4874a5b4e799e511c2649fa53.setContent(html_5c7eae7c4842fc73cac73603acff8d4f);
+            
+        
+
+        marker_36b65fc8832024fbfe9708ea5f7a679d.bindPopup(popup_ad2feed4874a5b4e799e511c2649fa53)
+        ;
+
+        
+    
+</script>
+</html>
