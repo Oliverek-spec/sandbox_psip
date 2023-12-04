@@ -121,9 +121,9 @@ def get_map_of_all(users_list:list)->None:
 
 def get_map_of_one(user:list)->None:
     map = folium.Map(
-        location = [52.5, 19],  
+        location = get_coordinates_of(user["miasto"]),  
         titles='OpesStreetMap', 
-        zoom_start=6)
+        zoom_start=10)
     nick_of_user = input('Wpisz nick użytkownika ')
     for user in users_list:
         if user['nick'] == nick_of_user:
