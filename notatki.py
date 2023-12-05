@@ -1,5 +1,11 @@
-import folium
-from utils import my_functions
-map = folium.Map(location = my_functions.get_coordinates_of(city="Bydgoszcz"), titles='OpesStreetMap', zoom_start=10)
-folium.Marker(location= my_functions.get_coordinates_of(city="Bydgoszcz"), popup="Bydgoszcz").add_to(map)
-map.save('mapka.html')
+import requests
+
+class User:
+    def __init__(self,miasto):
+        self.miasto = miasto
+    def pogoda_z(self,miasto:str):
+        url = f'https://danepubliczne.imgw.pl/api/data/synop/station/{miasto}'
+        return requests.get(url).json()
+npc_1 = User(miasto='warszawa')
+npc_2 = User(miasto='zamosc')
+print(npc_1.pogoda_z(npc_1.miasto))

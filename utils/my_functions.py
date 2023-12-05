@@ -133,5 +133,7 @@ def get_map_of_one(user:list)->None:
             ).add_to(map)
            map.save(f'mapapojedyncza.html') 
         return
-    
+def pogoda_z(miasto:str):
+    url = f'https://danepubliczne.imgw.pl/api/data/synop/station/{miasto}'
+    return requests.get(url).json()
     
