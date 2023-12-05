@@ -1,7 +1,7 @@
 import sqlalchemy
 import psycopg2
 db_params = sqlalchemy.URL.create(
-    drivername = "postgres",
+    drivername = "postgresql",
     username = 'postgres',
     password = '15082000',
     host = 'localhost',
