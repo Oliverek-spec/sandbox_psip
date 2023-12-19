@@ -78,14 +78,12 @@ def del_user_to(users_list:list) -> None:
         
 def update_user(users_list: list[str,str,int]) -> None:
     nick_of_user = input("Podaj nick użytkownika do modyfikacji: ")
-    print(nick_of_user)
-
     for user in users_list:
         if user['nick'] == nick_of_user:
             print("Znaleziono")
-            # user['name'] = input("Podaj nowe imię: ")
-            # user['nick'] = input("Podaj nową ksywe: ")
-            # user['posts'] = int(input("Podaj nową liczbę postów: "))
+            user['name'] = input("Podaj nowe imię: ")
+            user['nick'] = input("Podaj nową ksywe: ")
+            user['posts'] = int(input("Podaj nową liczbę postów: "))
             new_name = input("Podaj nowe imię: ")
             if new_name.__len__() > 0:
                 user['name'] = new_name
@@ -121,7 +119,7 @@ def get_map_of_all(users_list:list)->None:
 
 def get_map_of_one(user:list)->None:
     map = folium.Map(
-        location = get_coordinates_of(user["miasto"]),  
+        location = [52.5, 19],  
         titles='OpesStreetMap', 
         zoom_start=10)
     nick_of_user = input('Wpisz nick użytkownika ')

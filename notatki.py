@@ -1,5 +1,5 @@
 import requests
-
+#SCRAPOWANIE
 class User:
     def __init__(self,miasto):
         self.miasto = miasto
