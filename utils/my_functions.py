@@ -6,7 +6,6 @@ import geoalchemy2
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from sqlalchemy import orm
-from my_classes import User
 
 
 
@@ -23,13 +22,13 @@ engine = sqlalchemy.create_engine(db_params)
 connection = engine.connect()
 connection.commit()
 Base = orm.declarative_base()
-# class User(Base):
-#     __tablename__ = 'test_table1'
-#     id = sqlalchemy.Column(sqlalchemy.Integer(), primary_key=True)
-#     imię = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
-#     nick = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
-#     miasto = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
-#     posty = sqlalchemy.Column(sqlalchemy.Integer(), nullable=True)
+class User(Base):
+    __tablename__ = 'test_table1'
+    id = sqlalchemy.Column(sqlalchemy.Integer(), primary_key=True)
+    imię = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
+    nick = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
+    miasto = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
+    posty = sqlalchemy.Column(sqlalchemy.Integer(), nullable=True)
     
 inspector = sqlalchemy.inspect(engine)
 if User.__tablename__ not in inspector.get_table_names():
